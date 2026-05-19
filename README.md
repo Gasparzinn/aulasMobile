@@ -1,1 +1,55 @@
 # aulasMobile
+// 1. Apresentação
+const nome = "Ana";
+const idade = 18;
+const cidade = "Curitiba";
+
+console.log(`Oi! Meu nome é ${nome}, tenho ${idade} anos e moro em ${cidade}.`);
+
+
+// 2. Calculadora
+const somar = (a, b) => a + b;
+const subtrair = (a, b) => a - b;
+const multiplicar = (a, b) => a * b;
+const dividir = (a, b) => a / b;
+
+console.log(somar(10, 5));
+console.log(subtrair(10, 5));
+console.log(multiplicar(10, 5));
+console.log(dividir(10, 5));
+
+
+// 3. Classificador
+function classificar(nota) {
+  if (nota >= 7) return "Aprovado";
+  if (nota >= 5) return "Recuperação";
+  return "Reprovado";
+}
+
+console.log(classificar(8));
+console.log(classificar(6));
+console.log(classificar(3));
+
+
+// 4. Tabuada
+function tabuada(num) {
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`);
+  }
+}
+
+tabuada(5);
+
+
+// 5. Falsy
+let valor;
+
+if (valor) {
+  console.log("Tem valor");
+}
+
+valor = 10;
+
+if (valor) {
+  console.log("Tem valor");
+}

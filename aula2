@@ -1,1 +1,129 @@
+const prompt = require("prompt-sync")()
+
+let nome = prompt("Digite seu nome: ")
+let idade = Number(prompt("Digite sua idade: "))
+let cidade = prompt("Digite sua cidade: ")
+
+console.log(`Ola! Meu nome e ${nome}, tenho ${idade} anos e sou de ${cidade}.`)
+
+
+
+
+const prompt = require("prompt-sync")()
+
+let numero1 = Number(prompt("Digite o primeiro numero: "))
+let numero2 = Number(prompt("Digite o segundo numero: "))
+
+let soma = numero1 + numero2
+let subtracao = numero1 - numero2
+let multiplicacao = numero1 * numero2
+
+console.log(`Soma: ${soma}`)
+console.log(`Subtracao: ${subtracao}`)
+console.log(`Multiplicacao: ${multiplicacao}`)
+
+if (numero2 === 0) {
+    console.log("Erro: divisao por zero.")
+} else {
+    let divisao = numero1 / numero2
+    console.log(`Divisao: ${divisao}`)
+}
+
+
+
+
+
+const prompt = require("prompt-sync")()
+
+let soma = 0
+
+for (let i = 1; i <= 5; i++) {
+    let nota = Number(prompt(`Digite a ${i} nota: `))
+    soma += nota
+}
+
+let media = soma / 5
+
+console.log(`Media final: ${media}`)
+
+if (media >= 7) {
+    console.log("Aprovado")
+} else if (media >= 5) {
+    console.log("Recuperacao")
+} else {
+    console.log("Reprovado")
+}
+
+
+
+
+const prompt = require("prompt-sync")()
+
+let numero = Number(prompt("Digite um numero: "))
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`)
+}
+
+
+
+
+for (let i = 1; i <= 10; i++) {
+
+
+
+
+
+const prompt = require("prompt-sync")()
+
+
+let pares = 0
+let impares = 0
+
+    let numero = Number(prompt(`Digite o ${i} numero: `))
+
+    if (numero % 2 === 0) {
+        pares++
+    } else {
+        impares++
+    }
+}
+
+console.log(`Quantidade de pares: ${pares}`)
+console.log(`Quantidade de impares: ${impares}`)
+
+
+
+
+
+const prompt = require("prompt-sync")()
+
+const secreto = 42
+
+let tentativas = 0
+
+while (true) {
+    let numero = Number(prompt("Tente adivinhar o numero: "))
+
+    tentativas++
+
+    if (numero === secreto) {
+        console.log(`Voce acertou em ${tentativas} tentativas!`)
+        break
+    }
+
+    if (numero < secreto) {
+        console.log("O numero secreto e maior.")
+    } else {
+        console.log("O numero secreto e menor.")
+    }
+}
+
+
+
+
+
+
+
+
 
